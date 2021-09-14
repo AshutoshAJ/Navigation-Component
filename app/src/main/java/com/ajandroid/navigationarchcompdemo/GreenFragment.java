@@ -9,6 +9,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.ajandroid.navigationarchcompdemo.databinding.FragmentGreenBinding;
 
@@ -38,6 +39,7 @@ public class GreenFragment extends Fragment {
 
         View view = binding.getRoot();
 
+        init();
         initListener();
 
         return view;
@@ -51,9 +53,19 @@ public class GreenFragment extends Fragment {
         binding.greenFragBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_greenFragment_to_blueFragment);
+                //navController.navigate(R.id.action_greenFragment_to_blueFragment);
+                GreenFragmentDirections.ActionGreenFragmentToBlueFragment action = GreenFragmentDirections.actionGreenFragmentToBlueFragment("");
+                action.setFrag("Blue");
+                navController.navigate(action);
             }
         });
+
+    }
+
+    private void init() {
+
+        String frag = RedFragmentArgs.fromBundle(getArguments()).getFrag();
+        Toast.makeText(getActivity(), "Frag: " + frag, Toast.LENGTH_SHORT).show();
 
     }
 

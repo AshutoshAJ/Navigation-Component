@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.ajandroid.navigationarchcompdemo.databinding.FragmentBlueBinding;
 
@@ -36,7 +37,16 @@ public class BlueFragment extends Fragment {
 
         View view = binding.getRoot();
 
+        init();
+
         return view;
+
+    }
+
+    private void init() {
+
+        String frag = GreenFragmentArgs.fromBundle(getArguments()).getFrag();
+        Toast.makeText(getActivity(), "Frag: " + frag, Toast.LENGTH_SHORT).show();
 
     }
 }

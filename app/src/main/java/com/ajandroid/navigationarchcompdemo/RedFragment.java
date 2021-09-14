@@ -52,7 +52,10 @@ public class RedFragment extends Fragment {
         binding.redFragBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_redFragment_to_greenFragment);
+                //navController.navigate(R.id.action_redFragment_to_greenFragment);
+                RedFragmentDirections.ActionRedFragmentToGreenFragment action = RedFragmentDirections.actionRedFragmentToGreenFragment("");
+                action.setFrag("Green");
+                navController.navigate(action);
             }
         });
 

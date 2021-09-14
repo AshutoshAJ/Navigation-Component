@@ -9,10 +9,11 @@
         android:id="@+id/redFragment"
         android:name="com.ajandroid.navigationarchcompdemo.RedFragment"
         android:label="fragment_red"
-        tools:layout="@layout/fragment_red" >
+        tools:layout="@layout/fragment_red">
         <action
             android:id="@+id/action_redFragment_to_greenFragment"
             app:destination="@id/greenFragment" />
+        <argument android:name="frag" />
     </fragment>
 
     <fragment
@@ -20,6 +21,7 @@
         android:name="com.ajandroid.navigationarchcompdemo.GreenFragment"
         android:label="fragment_green"
         tools:layout="@layout/fragment_green" >
+        <argument android:name="frag" />
         <action
             android:id="@+id/action_greenFragment_to_blueFragment"
             app:destination="@id/blueFragment" />
@@ -29,6 +31,8 @@
         android:id="@+id/blueFragment"
         android:name="com.ajandroid.navigationarchcompdemo.BlueFragment"
         android:label="fragment_blue"
-        tools:layout="@layout/fragment_blue" />
+        tools:layout="@layout/fragment_blue">
+        <argument android:name="frag" />
+    </fragment>
 
 </navigation>
