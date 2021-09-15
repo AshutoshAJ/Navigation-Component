@@ -1,4 +1,4 @@
-package com.ajandroid.navigationarchcompdemo;
+package com.ajandroid.navigationarchcompdemo.fragments;
 
 import android.os.Bundle;
 
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.ajandroid.navigationarchcompdemo.R;
 import com.ajandroid.navigationarchcompdemo.databinding.FragmentGreenBinding;
 
 public class GreenFragment extends Fragment {

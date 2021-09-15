@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/redFragment"
-        android:name="com.ajandroid.navigationarchcompdemo.RedFragment"
+        android:name="com.ajandroid.navigationarchcompdemo.fragments.RedFragment"
         android:label="fragment_red"
         tools:layout="@layout/fragment_red">
         <action
@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/greenFragment"
-        android:name="com.ajandroid.navigationarchcompdemo.GreenFragment"
+        android:name="com.ajandroid.navigationarchcompdemo.fragments.GreenFragment"
         android:label="fragment_green"
         tools:layout="@layout/fragment_green" >
         <argument android:name="frag" />
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/blueFragment"
-        android:name="com.ajandroid.navigationarchcompdemo.BlueFragment"
+        android:name="com.ajandroid.navigationarchcompdemo.fragments.BlueFragment"
         android:label="fragment_blue"
         tools:layout="@layout/fragment_blue">
         <argument android:name="frag" />

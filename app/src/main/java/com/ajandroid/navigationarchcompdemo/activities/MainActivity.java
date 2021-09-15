@@ -1,8 +1,10 @@
-package com.ajandroid.navigationarchcompdemo;
+package com.ajandroid.navigationarchcompdemo.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.ajandroid.navigationarchcompdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 

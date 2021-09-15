@@ -1,4 +1,4 @@
-package com.ajandroid.navigationarchcompdemo;
+package com.ajandroid.navigationarchcompdemo.fragments;
 
 import android.os.Bundle;
 
