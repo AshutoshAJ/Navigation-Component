@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNavigationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, BottomNavigationActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -45,8 +45,8 @@ public class BlueFragment extends Fragment {
 
     private void init() {
 
-        String frag = GreenFragmentArgs.fromBundle(getArguments()).getFrag();
-        Toast.makeText(getActivity(), "Frag: " + frag, Toast.LENGTH_SHORT).show();
+        //String frag = GreenFragmentArgs.fromBundle(getArguments()).getFrag();
+        //Toast.makeText(getActivity(), "Frag: " + frag, Toast.LENGTH_SHORT).show();
 
     }
 }

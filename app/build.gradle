@@ -51,6 +51,9 @@ dependencies {
     // Feature module Support
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
 
+    // Feature module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    
     // Legacy Support
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
