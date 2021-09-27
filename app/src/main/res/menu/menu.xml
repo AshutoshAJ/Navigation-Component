@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/redFragment"
+        android:icon="@drawable/ic_chat"
         android:title="Red" />
 
     <item android:id="@+id/blueFragment"
+        android:icon="@drawable/ic_chat"
         android:title="Blue" />
 
     <item android:id="@+id/greenFragment"
+        android:icon="@drawable/ic_chat"
         android:title="Green" />
 </menu>
